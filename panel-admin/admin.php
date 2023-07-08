@@ -77,7 +77,7 @@ function renderuj_zakladke_wtyczki() {
             <a href="#informacje" class="nav-tab">Informacje</a>
         </h2>
 
-        <div id="ustawienia" class="moja-wtyczka-tab-content">
+        <div id="ustawienia" class="reguly-dostepnosci-tab-content">
             <h3>Ustawienia Wtyczki</h3>
             <form method="post" action="options.php">
                 <?php
@@ -88,7 +88,7 @@ function renderuj_zakladke_wtyczki() {
             </form>
         </div>
 
-        <div id="informacje" class="moja-wtyczka-tab-content" style="display: none;">
+        <div id="informacje" class="reguly-dostepnosci-tab-content" style="display: none;">
             <h3>Informacje o Wtyczce</h3>
             <p>Tutaj możesz umieścić informacje o swojej wtyczce.</p>
         </div>
@@ -100,7 +100,7 @@ function renderuj_zakladke_wtyczki() {
                 var tabId = $(this).attr('href');
                 $('.nav-tab-wrapper .nav-tab').removeClass('nav-tab-active');
                 $(this).addClass('nav-tab-active');
-                $('.moja-wtyczka-tab-content').hide();
+                $('.reguly-dostepnosci-tab-content').hide();
                 $(tabId).show();
             });
         });
@@ -220,7 +220,7 @@ function usun_wiersz_z_tabeli() {
 
             // Przykładowy kod usuwający wiersz z tabeli
             global $wpdb;
-            $table_name = $wpdb->prefix . 'moja_wtyczka_reguly';
+            $table_name = $wpdb->prefix . 'reguly_dostepnosci_platnosci_dla_dostaw';
             $wpdb->delete( $table_name, array( 'id' => $wiersz_id ), array( '%d' ) );
 
             // Wyślij komunikat o sukcesie do przeglądarki
