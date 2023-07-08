@@ -75,7 +75,6 @@ function tworz_tabele_wtyczki() {
         id INT AUTO_INCREMENT PRIMARY KEY,
         metoda_platnosci VARCHAR(255) NOT NULL,
         metoda_dostawy VARCHAR(255) NOT NULL,
-        metoda_dostawy_id VARCHAR(255) NOT NULL,
         ukryj TINYINT(1) DEFAULT 0
     ) $charset_collate;";
 
