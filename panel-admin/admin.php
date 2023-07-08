@@ -147,7 +147,7 @@ function renderuj_pola_regul() {
 
     <div style="margin:2rem 0rem;" >
     <?php if($metody_platnosci || $metody_dostawy){ ?>
-    <div style="margin:1rem 0rem;" class="info"> Wybierz metodę płatności a potem metodę dostawy z poniższej listy rozwijanej. Dla wybranej metody płatności zostanie ukryta metoda dsotawy. </div> 
+    <div style="margin:1rem 0rem;" class="info"> Wybierz metodę płatności a potem metodę dostawy z poniższej listy rozwijanej. Dla wybranej metody dostawy zostanie ukryta metoda płatności. </div> 
     <select class="metoda-platnosci" name="moja_wtyczka_metoda_platnosci[]">
     <option value="">Wybierz metodę płatności</option>
         <?php
