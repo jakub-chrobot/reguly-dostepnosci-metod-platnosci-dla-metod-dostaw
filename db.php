@@ -16,7 +16,6 @@ function get_results() {
             $metoda_dostawy = sanitize_text_field($row->metoda_dostawy);
             $ukryj = $row->ukryj ? 1 : 0;
 
-            // Twój kod dla przetwarzania wyników
             $regula = array(
                 'id' => $id,
                 'metoda_platnosci' => $metoda_platnosci,
