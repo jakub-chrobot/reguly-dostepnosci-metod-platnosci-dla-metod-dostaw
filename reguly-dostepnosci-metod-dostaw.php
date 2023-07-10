@@ -2,7 +2,7 @@
 /*
 Plugin Name: Reguły dostępności metod płatności dla metod dostaw
 Description: Wtyczka ta pozwala na tworzenie za pomocą w miarę przyjaznego interfejsu warunków, jaka metoda płatności ma zostać ukryta dla wskazanej metody dostawy.
-Version: 1.0.0
+Version: 1.1.0
 Author: Jakub Chrobot
 */
 
