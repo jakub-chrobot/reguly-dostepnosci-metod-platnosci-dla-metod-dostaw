@@ -74,8 +74,7 @@ function tworz_tabele_wtyczki() {
     $sql = "CREATE TABLE IF NOT EXISTS $tabela (
         id INT AUTO_INCREMENT PRIMARY KEY,
         metoda_platnosci VARCHAR(255) NOT NULL,
-        metoda_dostawy VARCHAR(255) NOT NULL,
-        ukryj TINYINT(1) DEFAULT 0
+        metoda_dostawy VARCHAR(255) NOT NULL
     ) $charset_collate;";
 
     require_once(ABSPATH . 'wp-admin/includes/upgrade.php');

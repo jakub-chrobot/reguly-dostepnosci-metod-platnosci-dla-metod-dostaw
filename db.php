@@ -14,13 +14,11 @@ function get_results() {
             $id = absint($row->id);
             $metoda_platnosci = sanitize_text_field($row->metoda_platnosci);
             $metoda_dostawy = sanitize_text_field($row->metoda_dostawy);
-            $ukryj = $row->ukryj ? 1 : 0;
 
             $regula = array(
                 'id' => $id,
                 'metoda_platnosci' => $metoda_platnosci,
                 'metoda_dostawy' => $metoda_dostawy,
-                'ukryj' => $ukryj,
             );
             $reguly[] = $regula;
         }
