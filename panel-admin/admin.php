@@ -78,7 +78,7 @@ function renderuj_zakladke_wtyczki()
 {
 ?>
     <div class="wrap">
-        <h1>Moja Wtyczka</h1>
+        <h1> Reguły dostępności metod płatności dla metod dostaw </h1>
         <h2 class="nav-tab-wrapper">
             <a href="#ustawienia" class="nav-tab nav-tab-active">Ustawienia</a>
             <a href="#informacje" class="nav-tab">Informacje</a>
