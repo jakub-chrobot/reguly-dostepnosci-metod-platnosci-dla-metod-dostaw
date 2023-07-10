@@ -6,7 +6,6 @@ Version: 1.1.0
 Author: Jakub Chrobot
 */
 
-// Sprawdzanie aktywności wtyczki WooCommerce
 function sprawdz_aktywnosc_woocommerce() {
     if (!class_exists('WooCommerce')) {
         add_action('admin_notices', 'reguly_dostepnosci_woocomerce_brak');
@@ -15,12 +14,10 @@ function sprawdz_aktywnosc_woocommerce() {
 }
 add_action('admin_init', 'sprawdz_aktywnosc_woocommerce');
 
-// Komunikat o braku aktywnej wtyczki WooCommerce
 function reguly_dostepnosci_woocomerce_brak() {
     echo '<div class="error"><p>Wtyczka Moja Wtyczka wymaga aktywnej wtyczki WooCommerce.</p></div>';
 }
 
-// Sprawdzanie wersji WooCommerce i WordPress
 function sprawdz_wersje() {
     $wymagana_wersja_woocomerce = '5.0.0';
     $wymagana_wersja_wordpress = '5.0';
@@ -42,12 +39,10 @@ function sprawdz_wersje() {
 }
 add_action('admin_init', 'sprawdz_wersje');
 
-// Komunikat o wymaganej wersji WooCommerce
 function reguly_dostepnosci_woocomerce_wersja() {
     echo '<div class="error"><p>Wtyczka Moja Wtyczka wymaga wersji WooCommerce 5.0.0 lub nowszej.</p></div>';
 }
 
-// Komunikat o wymaganej wersji WordPress
 function reguly_dostepnosci_wordpress_wersja() {
     echo '<div class="error"><p>Wtyczka Moja Wtyczka wymaga wersji WordPress 5.0 lub nowszej.</p></div>';
 }
@@ -64,7 +59,6 @@ function reguly_scripts() {
 }
 add_action('admin_enqueue_scripts', 'reguly_scripts');
 
-// Tworzenie tabeli w bazie danych podczas instalacji wtyczki
 function tworz_tabele_wtyczki() {
     global $wpdb;
     $tabela = $wpdb->prefix . 'reguly_dostepnosci_platnosci_dla_dostaw';
