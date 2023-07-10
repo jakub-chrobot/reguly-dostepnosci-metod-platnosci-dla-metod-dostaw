@@ -15,3 +15,7 @@ W razie pytań pisz śmiało -> biuro@jakubchrobot.pl
 v1.0 - wersja inicjacyjna podstawowe funkcjonalności skompresowane w formie wtyczki.
 
 v1.1 - dodanie wsparcia dla wtyczki Table Rate Shipping Method for WooCommerce by Flexible Shipping (https://wordpress.org/plugins/flexible-shipping/).
+
+
+### Wygląd interfejsu
+![interfejs_wtyczki](https://i.ibb.co/GPSp5wr/wtyczka-interfejs.jpg)
