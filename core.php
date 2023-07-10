@@ -1,6 +1,6 @@
 <?php
 
-function my_custom_available_payment_gateways( $available_gateways ) {
+function reguly_dostepnosci_payment_gateways( $available_gateways ) {
     if ( !is_admin() ) {
         $chosen_shipping_rates = ( isset( WC()->session ) ) ? WC()->session->get( 'chosen_shipping_methods' ) : array();
         $reguly = get_results();
@@ -22,4 +22,4 @@ function my_custom_available_payment_gateways( $available_gateways ) {
 
     return $available_gateways;
 }
-add_filter( 'woocommerce_available_payment_gateways', 'my_custom_available_payment_gateways' );
+add_filter( 'woocommerce_available_payment_gateways', 'reguly_dostepnosci_payment_gateways' );
